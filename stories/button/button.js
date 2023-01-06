@@ -1,7 +1,7 @@
 import './button.css'
 
 export const createButton = ({
-  style = 'outlined',
+  style = 'filled',
   size = 'small',
   label
 }) => {
@@ -9,6 +9,11 @@ export const createButton = ({
   button.type = 'submit'
   button.role = 'button'
   button.innerHTML = label
+  button.className = [
+    'button',
+    `button--${size}`,
+    `button--${style}`,
+  ].join(' ')
 
   return button
 }
