@@ -15,6 +15,22 @@ export default {
       description: {
         component: ButtonDocumentation
       }
+    },
+    actions: {
+      handles: ['mouseover']
+    },
+    backgrounds: {
+      default: 'default',
+      values: [
+        {
+          name: 'blackfriday',
+          value: '#000000'
+        },
+        {
+          name: 'default',
+          value: '#FFFFFF'
+        },
+      ]
     }
   },
   argTypes: {
@@ -37,6 +53,10 @@ export default {
       control: {
         type: 'radio'
       }
+    },
+    onClick: {
+      description: 'Event',
+      action: 'clicked'
     }
   }
 }
