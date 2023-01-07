@@ -20,6 +20,7 @@
     "@storybook/addon-links": "^6.5.15",
     "@storybook/builder-webpack4": "^6.5.15",
     "@storybook/html": "^6.5.15",
+    "@storybook/jest": "^0.0.10",
     "@storybook/manager-webpack4": "^6.5.15",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0"
