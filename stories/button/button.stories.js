@@ -1,7 +1,22 @@
 import { createButton } from './button'
+import ButtonDocumentation from './button.md'
 
 export default {
   title: 'Design System/Atoms/Button',
+  decorators:  [(story) => {
+    const decorator = document.createElement('div')
+    decorator.style.margin = '24px'
+    decorator.appendChild(story())
+    return decorator
+  }],
+  parameters: {
+    docs: {
+      page: null,
+      description: {
+        component: ButtonDocumentation
+      }
+    }
+  },
   argTypes: {
     label: {
       name: 'label',
